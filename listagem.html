@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+
+        <title>Listagem</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <div class="container">
+
+                <a class="navbar-brand" href="#">Loja Shoes</a>
+
+                <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu"
+                    aria-controls="menu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="cadastro.html">Cadastro</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                                href="listagem.html">Listagem</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="dashboard.html">Dashboard</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="produtos.html">Produtos</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <div class="container mt-5">
+
+            <h2 class="text-center mb-4">Lista de Sapatos</h2>
+
+            <div class="table-responsive">
+
+                <table
+                    class="table table-striped table-hover table-bordered text-center">
+
+                    <thead class="table-dark">
+
+                        <tr>
+                            <th>ID</th>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                            <th>Ação</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>Nike Air</td>
+                            <td>R$500</td>
+                            <td>
+                                <button class="btn btn-info btn-sm"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#detalhesModal">
+                                    Detalhes
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Adidas Run</td>
+                            <td>R$420</td>
+                            <td>
+                                <button class="btn btn-danger btn-sm"
+                                    onclick="alert('Produto excluído!')">
+                                    Excluir
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Puma Street</td>
+                            <td>R$390</td>
+                            <td>
+                                <button class="btn btn-info btn-sm"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#detalhesModal">
+                                    Detalhes
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>All Star</td>
+                            <td>R$280</td>
+                            <td>
+                                <button class="btn btn-danger btn-sm"
+                                    onclick="alert('Produto excluído!')">
+                                    Excluir
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>Vans Classic</td>
+                            <td>R$350</td>
+                            <td>
+                                <button class="btn btn-info btn-sm"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#detalhesModal">
+                                    Detalhes
+                                </button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+        <!-- MODAL DETALHES -->
+
+        <div class="modal fade" id="detalhesModal">
+
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+
+                    <div class="modal-header">
+
+                        <h5 class="modal-title">Detalhes do Produto</h5>
+
+                        <button class="btn-close"
+                            data-bs-dismiss="modal"></button>
+
+                    </div>
+
+                    <div class="modal-body">
+                        Aqui você pode colocar mais informações do produto.
+                    </div>
+
+                    <div class="modal-footer">
+
+                        <button class="btn btn-secondary"
+                            data-bs-dismiss="modal">
+                            Fechar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+
+</html>
