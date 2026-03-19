@@ -1,127 +1,174 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-    <head>
+<head>
 
-        <title>Cadastro</title>
-        <meta charset="UTF-8">
+    <title>Cadastro</title>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Charset -->
+    <meta charset="UTF-8">
 
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-            rel="stylesheet">
+    <!-- Responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    </head>
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
 
-    <body>
+</head>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body>
 
-            <div class="container">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-                <a class="navbar-brand" href="#">Loja Shoes</a>
+        <div class="container">
 
-                <button class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#menu"
-                    aria-controls="menu"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">Loja Shoes</a>
 
-                    <span class="navbar-toggler-icon"></span>
+            <!-- Botão mobile -->
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
 
-                </button>
+                <span class="navbar-toggler-icon"></span>
 
-                <div class="collapse navbar-collapse" id="menu">
+            </button>
 
-                    <ul class="navbar-nav ms-auto">
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="menu">
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
+                <ul class="navbar-nav ms-auto">
 
-                        <li class="nav-item">
-                            <a class="nav-link active"
-                                href="cadastro.html">Cadastro</a>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link"
-                                href="listagem.html">Listagem</a>
-                        </li>
+                    <!-- Página ativa -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cadastro.html">Cadastro</a>
+                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link"
-                                href="dashboard.html">Dashboard</a>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="listagem.html">Listagem</a>
+                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link"
-                                href="produtos.html">Produtos</a>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
 
-                    </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produtos.html">Produtos</a>
+                    </li>
 
-                </div>
+                </ul>
 
             </div>
 
-        </nav>
+        </div>
 
-        <div class="container mt-5">
+    </nav>
 
-            <div class="row align-items-center g-4">
+    <!-- CONTEÚDO -->
+    <div class="container mt-5">
 
-                <div class="col-12 col-md-6">
+        <!-- GRID -->
+        <div class="row align-items-center g-4">
 
-                    <h2 class="mb-4">Cadastro de Cliente</h2>
+            <!-- FORMULÁRIO -->
+            <div class="col-12 col-md-6">
 
-                    <form>
+                <h2 class="mb-4">Cadastro de Cliente</h2>
 
-                        <div class="mb-3">
-                            <label class="form-label">Nome</label>
-                            <input type="text" class="form-control">
-                        </div>
+                <form>
 
-                        <div class="mb-3">
-                            <label class="form-label">Email</label>
-                            <input type="email" class="form-control">
-                        </div>
+                    <!-- INPUT NOME -->
+                    <div class="mb-3">
+                        <label class="form-label">Nome</label>
+                        <input type="text" class="form-control">
+                    </div>
 
-                        <div class="mb-3">
-                            <label class="form-label">Tipo de Cliente</label>
+                    <!-- INPUT EMAIL -->
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control">
+                    </div>
 
-                            <select class="form-select">
-                                <option>Normal</option>
-                                <option>Premium</option>
-                            </select>
+                    <!-- SELECT -->
+                    <div class="mb-3">
+                        <label class="form-label">Tipo de Cliente</label>
 
-                        </div>
+                        <select class="form-select">
+                            <option>Normal</option>
+                            <option>Premium</option>
+                        </select>
+                    </div>
 
-                        <div class="mb-3">
-                            <label class="form-label">Observação</label>
-                            <textarea class="form-control" rows="3"></textarea>
-                        </div>
+                    <!-- TEXTAREA -->
+                    <div class="mb-3">
+                        <label class="form-label">Observação</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
 
-                        <button
-                            type="button"
-                            class="btn btn-success"
-                            data-bs-toggle="modal"
-                            data-bs-target="#confirmacao">
+                    <!-- BOTÃO que abre MODAL -->
+                    <button
+                        type="button"
+                        class="btn btn-success"
+                        data-bs-toggle="modal"
+                        data-bs-target="#confirmacao">
 
-                            Cadastrar
+                        Cadastrar
 
-                        </button>
+                    </button>
 
-                    </form>
+                </form>
+
+            </div>
+
+            <!-- IMAGEM -->
+            <div class="col-12 col-md-6 text-center">
+
+                <!-- img-fluid deixa responsiva -->
+                <img src="img/chave.jpg" class="img-fluid rounded-4">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MODAL (janela popup) -->
+    <div class="modal fade" id="confirmacao">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <!-- Cabeçalho -->
+                <div class="modal-header">
+
+                    <h5 class="modal-title">Sucesso</h5>
+
+                    <!-- Botão fechar -->
+                    <button class="btn-close"
+                        data-bs-dismiss="modal"></button>
 
                 </div>
 
-                <div class="col-12 col-md-6 text-center">
+                <!-- Corpo -->
+                <div class="modal-body">
+                    Cadastro realizado com sucesso!
+                </div>
 
-                    <img src="img/chave.jpg" class="img-fluid rounded-4">
+                <!-- Rodapé -->
+                <div class="modal-footer">
+
+                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                        OK
+                    </button>
 
                 </div>
 
@@ -129,41 +176,11 @@
 
         </div>
 
-        <div class="modal fade" id="confirmacao">
+    </div>
 
-            <div class="modal-dialog">
+    <!-- JS Bootstrap -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-                <div class="modal-content">
-
-                    <div class="modal-header">
-
-                        <h5 class="modal-title">Sucesso</h5>
-
-                        <button class="btn-close"
-                            data-bs-dismiss="modal"></button>
-
-                    </div>
-
-                    <div class="modal-body">
-                        Cadastro realizado com sucesso!
-                    </div>
-
-                    <div class="modal-footer">
-
-                        <button class="btn btn-primary" data-bs-dismiss="modal">
-                            OK
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-    </body>
-</html>F
+</body>
+</html>
